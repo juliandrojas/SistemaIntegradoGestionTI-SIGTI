@@ -1,0 +1,30 @@
+{
+  "name": "sistemaintegradogestionti-sigti",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm start",
+    "dev": "concurrently -k -n \"SERVER,CLIENT\" -c \"magenta.bold,red.bold\" \"npm run dev:server\" \"npm run dev:client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliandrojas/SistemaIntegradoGestionTI-SIGTI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/juliandrojas/SistemaIntegradoGestionTI-SIGTI/issues"
+  },
+  "homepage": "https://github.com/juliandrojas/SistemaIntegradoGestionTI-SIGTI#readme",
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}
